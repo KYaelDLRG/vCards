@@ -1,0 +1,354 @@
+<!--https://www.youtube.com/watch?v=mq0xJxOTiYo-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/svg/CL.svg" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Eduardo Chávez</title>
+</head>
+<body>
+<!--=============== HEADER PROFILE ===============-->
+<header class="profile container">
+<!--    Banderas-->
+<!--    <div class="flags" id="flags">-->
+<!--        <div class="flags__item" data-lenguage="es">-->
+<!--            <a href="#"><img src="assets/svg/mx.svg" alt="bandera de mexico"></a>-->
+<!--        </div>-->
+<!--        <div class="flags__item" data-lenguage="en">-->
+<!--            <a href="AlexaVazquezEn"><img src="assets/svg/us.svg" alt="bandera de usa"></a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+    <div class="profile__container grid">
+        <div class="profile__data">
+            <div class="profile__border">
+                <div class="profile__perfil">
+                    <img src="assets/img/eduardoT.png" width="640" height="360" alt="imagen de perfil">
+                </div>
+            </div>
+
+            <h2 class="profile__name" id="nombre">
+                Eduardo Chávez
+            </h2>
+            <h3 class="profile__profession">
+                CME Security <br> CEO
+            </h3>
+
+            <h3 class="profile__description">
+                <span id='text'></span> <span class='console-underscore' id='console'>&#95;</span>
+            </h3>
+
+            <ul class="profile__social">
+<!--                <li>-->
+<!--                    <a href="https://www.linkedin.com/in/alexa-v%C3%A1zquez-52009a21a" target="_blank"-->
+<!--                       class="profile__social-link" aria-label="Enlace al perfil de linkedin">-->
+<!--                        <i class="ri-linkedin-box-line"></i>-->
+<!--                    </a>-->
+<!--                </li>-->
+                <a href="https://www.instagram.com/cme.s3curity/" target="_blank" class="profile__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <!--<a href="#" target="_blank" class="profile__social-link">
+                    <i class="ri-twitter-x-fill"></i>
+                </a>-->
+                <a href="https://www.facebook.com/cme.s3curity" target="_blank" class="profile__social-link">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+            </ul>
+
+        </div>
+
+        <div class="profile__info grid">
+            <div class="profile__info-group">
+                <h3 class="profile__info-number">6 +</h3>
+                <p class="profile__info-description">
+                    Años de<br> experiencia
+                </p>
+            </div>
+            <div class="profile__info-group">
+                <h3 class="profile__info-number">9</h3>
+                <p class="profile__info-description">
+                    Industrias <br> atendidas
+                </p>
+            </div>
+            <div class="profile__info-group">
+                <h3 class="profile__info-number">163</h3>
+                <p class="profile__info-description">
+                    Clientes <br> satisfechos
+                </p>
+            </div>
+        </div>
+        <div class="profile__buttons">
+            <!--                    Cargar el archivo CFV-->
+            <!--                    <a download="" href="assets/pdf/Gianell-Cv.pdf" class="button">-->
+            <a download="" href="assets/vcf/alexaVazquez.vcf" class="button">
+                Guardar Contacto <i class="ri-user-follow-line"></i>
+            </a>
+            <div class="profile__buttons-small">
+                <a href="https://api.whatsapp.com/send?phone=525548666401&text=Hola..." target="_blank"
+                   class="button button__small button__gray" aria-label="Enlace al perfil de whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+                <a href="mailto:cme.s3curity@gmail.com?Subject=Hola%20Eduardo" target="_blank"
+                   class="button button__small button__gray" aria-label="Enlace para enviar un correo electronico">
+                    <i class="ri-mail-send-line"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!--=============== MAIN ===============-->
+<main class="main">
+    <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <ul class="filters__content">
+            <li>
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Soluciones y servicios
+                </button>
+            </li>
+            <li>
+                <button class="filters__button" data-target="#skills">
+                    Información personal
+                </button>
+            </li>
+        </ul>
+
+        <div class="filters__sections">
+            <!--=============== PROJECTS ===============-->
+            <div class="projects__content grid filters__active" data-content id="projects">
+                <article class="projects__card">
+                    <img src="assets/img/cctv.jpg" width="640" height="360" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                                    <span class="projects__subtitle">
+                                        Sistemas de CCTV
+                                    </span>
+                            <h3 class="projects__title">
+                                Realizamos y ejecutamos tu proyecto de circuito cerrado.
+                            </h3>
+                            <a href="#" class="projects__button button button__small" aria-label="Enlace al primer proyecto">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <img src="assets/img/redes.jpg" width="640" height="360" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                                    <span class="projects__subtitle">
+                                        Redes y cableado estructurado
+                                    </span>
+                            <h3 class="projects__title">
+                                Implementamos redes cableadas e inalámbricas de alta velocidad para oficinas, casas o corporativos industriales.
+                            </h3>
+                            <a href="#" class="projects__button button button__small" aria-label="Enlace al primer proyecto">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/mantenimiento.jpg" width="640" height="360" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                                    <span class="projects__subtitle">
+                                        Mantenimiento de equipos de computo
+                                    </span>
+                            <h3 class="projects__title">
+                                Mantenimiento preventivo y correctivo para equipos informáticos, aumentamos la productividad en tu negocio.
+                            </h3>
+                            <a href="#" class="projects__button button button__small" aria-label="Enlace al segundo proyecto">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/cerca.jpg" width="640" height="360" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                                    <span class="projects__subtitle">
+                                        Alarmas y cerco eléctrico
+                                    </span>
+                            <h3 class="projects__title">
+                                Suministro e instalación de sistemas de alarma y cerco eléctrico.
+                            </h3>
+                            <a href="https://chemlogis.com/industria/detergentes-limpiadores-y-desinfectantes/" class="projects__button button button__small" aria-label="Enlace al tercer proyecto">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!--=============== SKILLS ===============-->
+            <div class="skills__content grid" data-content id="skills">
+                <div class="skills__area">
+                    <h3 class="skills__title">Formación</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Facultad de Química</h3>
+                                    <span class="skills__level">UNAM</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="skills__group">
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Certificado de Inglés</h3>
+                                    <span class="skills__level">Languages Across Borders - Montréal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__area">
+                    <h3 class="skills__title">Licencias y certificaciones</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">BLACK BELT LEAN SIX SIGMA</h3>
+                                    <span class="skills__level">INTERNATIONAL LEAN SIX SIGMA</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">GREEN BELT</h3>
+                                    <span class="skills__level">INTERNATIONAL LEAN SIX SIGMA</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="skills__group">
+
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">YELLOW BELT</h3>
+                                    <span class="skills__level">INTERNATIONAL LEAN SIX SIGMA</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__area">
+                    <h3 class="skills__title">Experiencia</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Ventas y Servicio Técnico</h3>
+                                    <span class="skills__level">Chemlogis</span>
+                                </div>
+                            </div>
+
+                            <!--<div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Advance</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>-->
+                        </div>
+
+                        <!--<div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--=============== FOOTER ===============-->
+<footer class="footer container">
+            <span class="footer__copy">
+                <a href="#">CME Security</a>
+            </span>
+    <span class="footer__copy">
+                &#169; KYaelDLRG. Todos los derechos reservados.
+            </span>
+</footer>
+
+<!--=============== SCROLLREVEAL ===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
